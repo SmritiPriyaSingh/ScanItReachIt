@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generate</title>
+    <link rel="icon" href="qr-code.svg" type="x-icon" sizes="48x48">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="area">
+        <div claDarkss="box">
+            <div class="text-container">
+            <h1 id="animated-text"></h1>
+            </div>
+            <p>Select the platform and provide the appropriate info:</p>
+<br>
+<br>
+            <div class="dropdown">
+                <div class="select">
+                    <span id="selected-platform">Select Platform</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item" data-value="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div class="dropdown-item" data-value="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="dropdown-item" data-value="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="dropdown-item" data-value="telegram">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </div>
+                    <div class="dropdown-item" data-value="github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="dropdown-item" data-value="facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="dropdown-item" data-value="snapchat">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </div>
+                    <div class="dropdown-item" data-value="x">
+                        <i class="fab fa-x"></i>
+                        <span>X</span>
+                    </div>
+                </div>
+            </div>
+<br>
+<br>
+            <input type="text" placeholder="username" id="identifier" required>
+            <br><br>
+            <button onclick="generateQRCode()" class="button">Generate QR Code</button>
+
+            <div class="qr" id="qr-code"></div>
+       </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
